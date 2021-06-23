@@ -1,7 +1,33 @@
 body {
-    font-family: "Nunito", sans-serif; 
+    font-family: "Open Sans", sans-serif; 
 }
   
   h1, h2, h3 {
     font-family: "Nunito", cursive; 
+  
 }
+.logotext {
+  font-family: "Nunito", cursive;
+  font-size: 25px;
+
+}
+
+header {
+  background-color: #FFC300 ;
+}
+
+header h1 {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+nav ul li {
+  font-family: "Nunito", cursive;
+  font-size: 20px;
+}
+
+
+.signup {
+  font-family: "Nunito", cursive;
+  font-size: 20px;
+ }
