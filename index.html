@@ -7,42 +7,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
-
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="css/styles.css" />
     <!-- Additional CSS must be placed after Bootstrap CSS -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,600;1,600&display=swap"
-        rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,200;0,400;0,600;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+
     <link rel="stylesheet" href="css/styles.css" />
 
     <title>Lingvo Hub</title>
 </head>
 
 <body>
-    
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-light bg-orange">
-            <a href="#" class="navbar-brand align-items-center"> <img src="img/logo.png" alt="Company Logo" height=60 width=100> <strong><span class="logotext"> Lingvo Hub </span></strong></a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarMenu">
-                <ul class="navbar-nav ml-auto align-items-center">
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Library</a>
-                    </li>
-                </ul>
+        <div class="top-bar">
+            <div class="container">
+                <div class="col-12 text-right">
+                    <p><a href="tel:+673280945934">Call us at 1(800) 45678934</a></p>
+                </div>
             </div>
+        </div>
+    
+        <nav class="navbar navbar-expand-sm navbar-light bg-warning sticky-top">
+            <div class="container">
+                <a href="#" class="navbar-brand align-items-center"> <img src="img/logo.png" alt="Company Logo" height=50 width=80> <strong><span class="logotext"> Lingvo Hub </span></strong></a>
+                
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarMenu">
+                    <ul class="navbar-nav ml-auto align-items-center">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Library</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+          </div>
         </nav>
-    </header>
+    
     <div class="container">
 
         <div class="row">
             <div class="col mx-auto">
-                <div id="homeCarousel" class="carousel slide" data-ride="carousel">
+                <div id="homeCarousel" class="carousel slide" data-ride="carousel" data-interval="555000"
+                    data-pause="hover">
                     <ol class="carousel-indicators">
                         <li data-target="#homeCarousel" data-slide-to="0" class="active"></li>
                         <li data-target="#homeCarousel" data-slide-to="1"></li>
@@ -50,25 +72,43 @@
                     </ol>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
-                            <img class="d-block w-100" src="img/tutor.jpg"
-                                alt="English Tutor" />
+                            <img class="d-block w-100" src="img/tutor.jpg" alt="English Tutor" />
                             <div class="carousel-caption">
-                                <h3>Only Quality Teachers</h3>
-                                <p class="d-none d-sm-block">Find the tutor who suits your needs best</p>
-                            </div>
+                                <div class="container">
+                                    <div class="row justify-content-center">
+                                        <div class="col-8 bg-custom d-none d-md-block py-3 px-0">
+                                            <h2>Only Quality Teachers</h2>
+                                            <div class="border-top border-warning w-50 mx-auto my-3"></div>
+                                                <h3 class="d-none d-sm-block pb-3">Find a tutor</h3>
+                                                <a href="#" class="btn btn-secondary btn-lg mr-2">View Demo</a>
+                                                <a href="#" class="btn btn-warning btn-lg ml-2">Book a Class</a>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                             </div>
                         </div>
+                    
                         <div class="carousel-item">
                             <img class="d-block w-100" src="img/online.jpg" alt="Learning English Online" />
                             <div class="carousel-caption">
-                                <h3>Go Online</h3>
-                                <p class="d-none d-sm-block">Study from the comfort of your own home </p>
+                                <div class="container">
+                                    <div class="row justify-content-center second-carousel">
+                                        <div class="col-5 bg-custom d-none d-md-block py-3 px-0">
+                                            <p class="d-none d-sm-block">Study from the comfort of your own home </p>
+                                            <a href="#" class="btn btn-warning btn-lg">Go Online</a>
+                                        </div>
+                                    </div>    
+                                </div>
                             </div>
                         </div>
+
                         <div class="carousel-item">
                             <img class="d-block w-100" src="img/englishcorner.jpg" alt="English Corner Class" />
                             <div class="carousel-caption">
                                 <h3>Fun English Corner</h3>
-                                <p class="d-none d-sm-block">Team up with other learners in our English corner class </p>
+                                <p class="d-none d-sm-block">Team up with other learners in our English corner class
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -80,16 +120,36 @@
                         <span class="carousel-control-next-icon"></span>
                         <span class="sr-only">Next</span>
                     </a>
-                        <button class="btn btn-danger btn-sm" id="carouselButton">
-                            <i class="fa fa-pause"></i>
-                        </button>
-                    </div>
+
                 </div>
             </div>
+        </div>
+        <div class="row row-content">
+            <div class="col-6">
+                <iframe width="500" height="350" src="https://www.youtube.com/embed/QJ89MtjAZHg"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>">
+            </div>
+
+            <div class="col-6 mr-auto align-self-center">
+                <h2>About US</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque vitae ipsum id metus pellentesque
+                    lobortis id aliquet ex. Etiam nisi turpis, eleifend eu odio eget, ultrices sodales turpis. Integer
+                    sit amet est ornare, viverra enim a, hendrerit nulla. Nullam hendrerit felis at finibus faucibus.
+                    Curabitur et mi nec augue finibus ultrices vel eget turpis. Pellentesque aliquet diam ac mi
+                    vestibulum, id ultrices erat blandit. Integer ut dolor sed purus blandit tristique. Phasellus risus
+                    turpis, viverra ut finibus nec, convallis eu urna. Nulla euismod sapien posuere orci dapibus varius.
+                    Duis vitae ex ante.</p>
+            </div>
+        </div>
+    </div>
 
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    
 </body>
 
 </html>
