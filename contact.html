@@ -34,6 +34,107 @@
             </div>
         </div>
     </div>
+
+    <div id="SignInModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h3 class="modal-title" style="color: black;">Sign In</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row pb-4">
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Password">
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <span>Not a Member? </span><a class="signIn" role="button" id="signUpId"> Sign Up</a>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-warning btn-sm ml-1">Sign in</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="signUpModal" class="modal fade" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header bg-warning">
+                    <h3 class="modal-title" style="color: black;">Sign Up</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="form-row pb-4">
+                                <div class="form-group col-12">
+                                    <label for="firstName" class="sr-only">First Name</label>
+                                    <input type="text" class="form-control form-control-sm" id="firstName" name="firstName" placeholder="First Name" required="true"/>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="lastName" class="sr-only">Last Name</label>
+                                    <input type="text" class="form-control form-control-sm" id="lastName" name="lastName" placeholder="Last Name" required="true"/>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label for="telNum" class="sr-only">Contact Tel.</label>
+                                    <input type="tel" class="form-control form-control-sm" name="telNum" id="telNum" placeholder="Tel. number" required="true"/>
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginEmail">Email address</label>
+                                    <input type="email" class="form-control form-control-sm" id="loginEmail"
+                                        placeholder="Enter email" required="true">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="loginPassword">Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="loginPassword"
+                                        placeholder="Password" required="true">
+                                </div>
+                                <div class="form-group col-12">
+                                    <label class="sr-only" for="confirmloginPassword">Confirm Password</label>
+                                    <input type="password" class="form-control form-control-sm" id="confirmloginPassword"
+                                        placeholder="Confirm Password" required="true">
+                                </div>
+                                <div class="col-6">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox">
+                                        <label class="form-check-label"> Remember me</label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <button type="button" class="btn btn-secondary btn-sm ml-auto"
+                                    data-dismiss="modal">Cancel</button>
+                                <button type="submit" class="btn btn-warning btn-sm ml-1">Sign Up</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     
         <nav class="navbar navbar-expand-sm navbar-light bg-warning">
             <div class="container">
@@ -84,8 +185,8 @@
             	<a role="button" class="btn btn-link" href="mailto: campsites@nucamp.co"><i class="fa fa-envelope-o"></i>  info@lingvohub.com </a>
             </div>
             <div class="col">
-            <div id="map-container-google-1" class="z-depth-1-half map-container">
-                <iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
+            <div id="map-container-google-1" class="z-depth-1-half map-container embed-responsive embed-responsive-1by1">
+                <iframe class="embed-responsive-item" src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0"
                   style="border:0" allowfullscreen></iframe>
             </div>
             </div>
@@ -182,7 +283,7 @@
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
+    <script src="js/lingvo.js"></script>
     
 </body>
 

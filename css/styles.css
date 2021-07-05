@@ -16,6 +16,10 @@ body {
     font-size: 1.1rem;
 }
 
+ #signInButton:hover {
+   color: #ffc107;
+ }
+
   .navbar {
     font-size: 1.15rem;
     font-weight: 600;
@@ -185,3 +189,5 @@ ul, li.socialIcon {
   #more {
     display: none;
   }
+
+  
